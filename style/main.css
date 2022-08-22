@@ -43,7 +43,7 @@ h1{
 
 span{
     color: var(--Softviolet);
-    letter-spacing: 1px;
+    
 }
 
 
@@ -98,6 +98,7 @@ p{
 
 .small {
     font-size: 12px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--Slightlytransparentwhite2)
 }
@@ -106,10 +107,25 @@ p{
     grid-column: 2;
     grid-row: 1;
     background-color: var(--Softviolet);
+    position: relative;
 }
 
-.bussines-img img{
+.pink{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Softviolet);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.25;
+}
+
+.img-desktop{
     mix-blend-mode: multiply;
+}
+
+.img-mobile{
+    display: none;
 }
 
 .attribution {
@@ -160,11 +176,16 @@ p{
         grid-row: 1;
     }
 
-    .bussines-img img {
-        width: 100%;
-        height: 100%;
+    .img-desktop{
+        display: none;
     }
 
+    .img-mobile{
+        display:block;
+        width: 100%;
+        mix-blend-mode: multiply;
+    }
+    
     .stats-numbers {
         min-height: 200px;
         flex-direction: column;
