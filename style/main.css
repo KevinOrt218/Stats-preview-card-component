@@ -146,6 +146,7 @@ p{
 
     .main-flex {
         height: auto;
+        padding: 20px 0;
     }
 
     h1 {
